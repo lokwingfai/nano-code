@@ -6,7 +6,14 @@
   "devDependencies": {
     "@types/bun": "latest"
   },
+  "scripts": {
+    "agent": "bun run bin/cli.ts"
+  },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.97.0",
+    "openai": "^6.37.0"
   }
 }
