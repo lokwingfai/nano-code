@@ -2,6 +2,10 @@ on: [workflow_dispatch]
 jobs:
  run:
   runs-on: ubuntu-latest
+  env:
+    LLM_PROVIDER: ollamacloud
+    LLM_MODEL: gemma4:31b-cloud
+    LLM_API_KEY: ollama
   steps:
    - uses: actions/checkout@v4
    - uses: oven-sh/setup-bun@v2
